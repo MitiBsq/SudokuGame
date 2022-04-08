@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SudokuOnline</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="header">Welcome to sudoku</div>
+    <div id="playOrRules">
+        <input type="submit" value="Play" class="btn btn-info btn-lg" id="justPlay">
+        <h4>or</h4>
+        <input type="submit" value="Rules" class="btn btn-info btn-lg" id="goRules">
+    </div>
+    <div id="theRulles">
+        <div class="card" style="width: 18rem;">
+            <img src="/images/rule1.jpg" class="card-img-top" alt="Rule1">
+            <div class="card-body">
+                <p class="card-text">Sudoku is played on a grid of 9 x 9 spaces. Within the rows and columns are 9
+                    “squares” (made up of 3 x 3 spaces). Each row, column and square (9 spaces each) needs to be filled
+                    out with the numbers 1-9, without repeating any numbers within the row, column or square
+            </div>
+        </div>
+        <div id="readyToPlayPlace">
+            <label for="readyToPlay" class="fs-3" >Are you ready to play?</label>
+            <input type="submit" value="Play" class="btn btn-info btn-lg" name="readyToPlay" id="readyToPlay">
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/images/rule2.jpg" class="card-img-top" alt="Rule2">
+            <div class="card-body">
+                <p class="card-text">One way to figure out which numbers can go in each space is to use “process of
+                    elimination” by checking to see which other numbers are already included within each square, since
+                    there can be no duplication of numbers 1-9 within each square (or row or column).
+            </div>
+        </div>
+    </div>
+    <div id="infoText"></div>
+    <div id="theGame">
+        <div id="theGameBoxPlace"></div>
+    </div>
+</body>
+</html>
