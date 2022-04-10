@@ -74,7 +74,6 @@ function generateTheGameBox() {
     theGameBox.id = 'theGameBox';
     document.getElementById('theGameBoxPlace').appendChild(theGameBox);
     for (let i = 0; i < 9; ++i) {
-        const theNumbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
         const insideRow = document.getElementById('theGameBox').insertRow(i);
         insideRow.id = 'row' + i;
         for (let j = 0; j < 9; ++j) {
